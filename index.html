@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi</title>
+<link rel="stylesheet" href="PepsiLandingPage.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#" class="logo"><img src="https://www.pepsi.com/en-us/uploads/images/logo-large.png?mtime=20180110134814" alt="logo" class="logo-img"></a>
+            <div id="toggle"></div> 
+         
+            <ul id="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">New Seller</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What<br><span>I Like</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit vitae incidunt voluptatem qui magnam earum dolorem? Pariatur commodi, officiis, officia magnam id ab quia reprehenderit quisquam consectetur cum veritatis.</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi.png?mtime=20180110134757" alt="pepsi" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi.png?mtime=20180110134757" alt="pepsi" onclick="imgslider('https://www.pepsi.com/en-us/uploads/images/can-pepsi.png?mtime=20180110134757');bgcolor('#0062be')"></li>
+            <li><img src="https://www.pepsi.com/en-us/uploads/images/Diet-Pepsi-v2_12oz.png?mtime=20180215173735" alt="pepsi" onclick="imgslider('https://www.pepsi.com/en-us/uploads/images/Diet-Pepsi-v2_12oz.png?mtime=20180215173735');bgcolor('#ee3838')"></li>
+            <li><img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi-zero-sugar.png" alt="pepsi" onclick="imgslider('https://www.pepsi.com/en-us/uploads/images/can-pepsi-zero-sugar.png');bgcolor('#1e1e1e')"></li>
+        </ul>
+    </section>
+    <ul class="sci">
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#" ><ion-icon name="logo-twitter"></ion-icon></a></li>
+    </ul>
+</body>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> 
+<script type="text/javascript">
+    function imgslider(anything){
+        document.querySelector('.pepsi').src=anything;
+    }
+    function bgcolor(color){
+       const sec= document.querySelector('.sec');
+       sec.style.background=color;
+    }
+    toggle.onclick=function(){
+          const toggle =document.getElementById('toggle');
+          let nav = document.getElementById('navbar');
+          toggle.classList.toggle('active');
+         nav.classList.toggle('active');
+       
+      }
+      
+</script>
+</html>
